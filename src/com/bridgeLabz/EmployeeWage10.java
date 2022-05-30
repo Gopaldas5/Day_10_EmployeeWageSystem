@@ -6,13 +6,18 @@ public class EmployeeWage10 {
     public static void main(String[] args) {
         System.out.println("Welcome to the employee wage computation on master branch");
         int IS_ABSENT_TODAY = 0;
+        int IS_FULL_TIME = 1;
+        int EMP_RATE_PER_HOUR = 20;
+        int empHrs = 0;
+        int empWage = 0;
         Random random = new Random();
         int employeeAttendanceCheck = random.nextInt(2);
 
-        if (employeeAttendanceCheck  == IS_ABSENT_TODAY) {
-            System.out.println("Employee is absent today");
-        } else {
-            System.out.println("Employee is Present today");
-        }
+        if (employeeAttendanceCheck == IS_FULL_TIME)
+            empHrs = 8;
+        else
+            empHrs = 0;
+        empWage = empHrs * EMP_RATE_PER_HOUR;
+        System.out.println("Employee wage : "+empWage);
     }
 }

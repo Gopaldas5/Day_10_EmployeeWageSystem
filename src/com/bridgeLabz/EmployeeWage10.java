@@ -12,11 +12,11 @@ public class EmployeeWage10 {
         System.out.println("Welcome to the employee wage computation on master branch");
 
         Random random = new Random();
-        int employeeCheck = random.nextInt(2);
+        int employeeAttendanceCheck = random.nextInt(2);
         int empHrs = 0;
         int empWage = 0;
 
-         switch (employeeCheck) {
+         switch (employeeAttendancrCheck) {
              case (int) IS_PART_TIME:
                  empHrs = 4;
                  break;
